@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人资料</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personage.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<a href="mine.html" class="iconfont icon1"><</a>
+			<div>个人资料</div>
+			<a></a>
+		</div>
+		<div class="nav">
+			<span>头像</span>
+			<div><img src="../img/personage/a1.gif"><i class="iconfont icon2">></i></div>
+		</div>
+		<ul class="main">
+			<li><a>账号</a><a>15930227380</a></li>
+			<li><a>昵称</a><a>mobi7380124</a></li>
+			<li><a>性别</a><a>女<i class="iconfont icon2">></i></a></li>
+			<li><a>生日</a><a>1995-04-02</a></li>
+			<li><a>城市</a><a class="iconfont icon2">></a></li>
+			<li><a>账户等级</a><a class="a">V1<i class="iconfont icon2">></i></a></li>
+			<li><a>个性签名</a><a class="iconfont icon2">></a></li>
+		</ul>
+		<div class="bot">
+			<a>收货地址</a><a>修改<i class="iconfont icon2">></i></a>
+		</div>
+	</body>
+</html>
+<script>
+	var scale=1/window.devicePixelRatio;
+	
+	var mstr='initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+	
+	document.getElementById('vp').content=mstr;
+	
+</script>
+
+<script>
+
+     var html = document.querySelector("html");
+     console.log(html.offsetWidth)
+     html.style.fontSize = html.offsetWidth/640*100 + "px";
+     addEventListener("resize",function(){
+        html.style.fontSize = html.offsetWidth/640*100 + "px";
+     },false);
+</script>

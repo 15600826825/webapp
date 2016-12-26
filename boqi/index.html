@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>波奇宠物——首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/footer.css"/>
+		<script src="js/jquery-1.11.1.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+	  <!--header-->
+	  <header>
+	    <i class="iconfont news">&#xe615;</i>
+	    <input class="iconfont" id="search-txt" type="text" value=" &#xe686; 搜索">
+	    <i class="iconfont">&#xec81;</i>
+	  </header>
+	  
+	  <div class="search-page">
+	  	<div class="search-top">
+	  		<div>
+	  			<input class="iconfont" id="ipt-txt" type="text" placeholder="请输入关键字进行搜索"><button id="clear"></button>
+	  		</div>
+	  	  <a id="cancle" href="#">取消</a>
+	  	</div>
+	  	<div class="tabs">
+	  		<div class="iconfont icon-huodong"><p>活动</p></div>
+	  		<div class="iconfont icon-huati"><p>话题</p></div>
+	  		<div class="iconfont icon-yiwancheng"><p>笔记</p></div>
+	  		<div class="iconfont icon-wode"><p>用户</p></div>
+	  		<div class="iconfont icon-wenda"><p>问答</p></div>
+	  		<div class="iconfont icon-pingfen"><p>测评</p></div>
+	  		<div class="iconfont icon-tuangou"><p>标签</p></div>
+	  		<div class="iconfont icon-shangcheng"><p>商城</p></div>
+	  		<div class="iconfont icon-xiaoxi"><p>服务</p></div>
+	  	</div>
+	  	
+	  	<div class="hot-search">
+	  		<h3>热门搜索</h3>
+	  		<a href="#">搜索0</a>
+	  		<a href="#">搜索搜索搜索1</a>
+	  		<a href="#">搜索搜索2</a>
+	  		<a href="#">搜索3</a>
+	  		<a href="#">搜索索搜索4</a>
+	  		<a href="#">搜索5</a>
+	  		<a href="#">搜索6</a>
+	  		<a href="#">搜搜索7</a>
+	  		<a href="#">搜索8</a>
+	  		<a href="#">搜索9</a>
+	  	</div>
+	  </div>
+	  
+	  <section>
+	    <span class="active-span">精选</span>
+	    <span>最新</span>
+	    <span>关注</span>
+	    <span></span>
+	    <span>+</span>
+	  </section>
+	  <div class="header-empty"></div>
+	  <!--main-->
+	  <div class="main">
+	    <!--精选-->
+	    <div class="selection">
+  	  	<div class="box-left">
+  	  	  
+  	  	</div>
+  	  	<div class="box-right"></div>
+	    </div>
+	  	<!--最新-->
+	  	<div class="new">
+	  		<div class="box-left"></div>
+	  		<div class="box-right"></div>
+	  	</div>
+	  	<!--关注-->
+	  	<div class="focus">
+	  		<div class="box-left"></div>
+	  		<div class="box-left"></div>
+	  	</div>
+	  </div>
+	  
+	  <!--footer-->
+	  <div class="footer_bai"></div>
+    <div class="footer">
+      <a href="index.html">
+        <i class="iconfont icon-huati"></i>
+        <p>首页</p>
+      </a>
+      <a href="html/discover.html">
+        <i class="iconfont icon-faxian"></i>
+        <p>发现</p>
+      </a>
+      <a href="html/shop.html">
+        <i class="iconfont icon-shangcheng"></i>
+        <p>商城</p>
+      </a>
+      <a href="html/service.html">
+        <i class="iconfont icon-shangcheng1"></i>
+        <p>服务</p>
+      </a>
+      <a href="html/mine.html">
+        <i class="iconfont icon-wode"></i>
+        <p>我的</p>
+      </a>
+    </div>
+	</body>
+</html>
+<script>
+    var html = document.querySelector("html");
+    html.style.fontSize = html.offsetWidth/640*100 + "px";
+    addEventListener("resize",function(){
+      html.style.fontSize = html.offsetWidth/640*100 + "px";
+    },false);
+    
+    $(".news").click(function(){
+    	document.location.href = "html/news.html"
+    })
+</script>
+<script src="js/index.js" charset="utf-8"></script>

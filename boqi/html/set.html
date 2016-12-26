@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/animate.min.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			html,body{
+				width:100%;
+				height: 100%;
+				background: #e4e4e4;
+				position: relative;
+				
+			}
+			.fixtop{
+				
+				width:100%;
+				height: 3rem;
+				position: fixed;
+				top: 0;
+				display: flex;
+				justify-content: center;
+				background: #fff;
+			}
+			.fixtopli{
+				width:90%;
+				height: 3rem;
+				display: flex;
+				 font-size: 0.8rem;
+			}
+			.fixtopli div:nth-child(1){
+				width:33.3%;
+		    	background:url(../img/set/zuosanjiao.jpg) left center no-repeat;
+		    	background-size:0.6rem ;
+		    	
+			}
+			.fixtopli div:nth-child(2){
+				width:33.3%;
+		    	display:flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	text-align: center;
+			}
+			.bubai{
+				width:100%;
+				height: 3rem;	
+			}
+			.top{
+				width:100%;
+				height: 6.1rem;
+				background: #fff;
+			}
+			.top li{
+				width:100%;
+				height: 3rem;
+				display: flex;
+				justify-content: center;
+				font-size: 0.8rem;
+			}
+			.top li div{
+				width:90%;
+				display: flex;
+				align-items: center;
+			}
+			.top li:nth-child(1){
+				border-top:1px solid #e4e4e4 ;
+			}
+			.topb{
+				border-top:1px solid #e4e4e4 ;
+				background: url(../img/set/sanjiao.jpg) right center no-repeat;
+				background-size: 0.6rem;
+			}
+		    .con{
+		    	width:100%;
+		    	height: 13rem;
+		    	margin-top: 1rem;
+		    }
+		    .con li{
+		    	width:100%;
+		    	height: 3.2rem;
+		    	background: #fff;
+		    	display: flex;
+		    	justify-content: center;
+		    	 font-size: 0.8rem;
+		    }
+		    .con li div{
+		    	width:90%;
+		    	border-bottom: 1px solid #e4e4e4;
+		    	background: url(../img/set/sanjiao.jpg)right center no-repeat;
+		    	background-size:0.6rem ;
+		    	display: flex;
+		    	align-items: center;
+		    }
+		    
+		    .main{
+		    	width:100%;
+		    	height: 13rem;
+		    	margin-top: 1rem;
+		    	background: #f2f3f4;
+		    }
+		    .main li{
+		    	width:100%;
+		    	height: 3.2rem;
+		    	background: #fff;
+		    	display: flex;
+		    	justify-content: center;
+		    	 font-size: 0.8rem;
+		    }
+		    .main li div{
+		    	width:90%;
+		    	border-bottom: 1px solid #e4e4e4;
+		    	background: url(../img/set/sanjiao.jpg)right center no-repeat;
+		    	background-size:0.6rem ;
+		    	display: flex;
+		    	align-items: center;
+		    }
+		    .logo{
+		    	width:100%;
+		    	height: 10rem;
+		    	background: #f2f3f4;
+		    	display: flex;
+		    	align-items: center;
+		    }
+		    .logoli{
+		    	width:100%;
+		    	height: 50%;
+		        background: url(../img/set/banbenlogo.jpg)center center no-repeat;
+		        background-size: 6rem ;
+		    }
+		    .tuichu{
+		    	width:100%;
+		    	height: 4rem;
+		    	background: #f2f3f4;
+		    	display: flex;
+		    	justify-content: center;
+		    }
+		    .tuichuli{
+		    	width:90%;
+		    	height: 3rem;
+		    	background: #ff6349;
+		    	border-radius: 10px;
+		    	display: flex;
+		    	color: #fff;
+		    	justify-content: center;
+		    	align-items: center;
+		    	font-size: 1rem;
+		    }
+		    .zhezhao{
+		    	width:100%;
+		    	height: 100%;
+		    	background: rgba(100,100,100,0.5);
+		    	position: fixed;
+		    	z-index: 1;
+		    	justify-content: center;
+		    	align-items: center;
+		    	display: none;
+		    }
+		    .num{
+		    	position: fixed;
+		    	bottom: 3.5rem;
+		    	width:100%;
+		    	height: 2rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+		    }
+		    .numli{
+		    	width:90%;
+		    	height: 2rem;
+		    	background: #fff;
+		    	border-radius: 10px;
+		    	display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+		    }
+		    .quxiao{
+		    	position: fixed;
+		    	bottom: 1rem;
+		    	width:100%;
+		    	height: 2rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+		    }
+		    .quxiaoli{
+		    	width:90%;
+		    	height: 2rem;
+		    	background: #fff;
+		    	border-radius: 10px;
+		    	display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="zhezhao">
+        	<div class="num">
+        		<div class="numli">
+        			<p>400-820-6098</p>
+        		</div>
+        	</div>
+        	<div class="quxiao">
+        		<div class="quxiaoli">
+        			<p>取消</p>
+        		</div>
+        	</div>
+        </div>
+		<div class="fixtop">
+			<div class="fixtopli">
+				<div class="fanhui"></div>
+			<div><p>设置</p></div>
+			</div>
+		</div>
+		<div class="bubai"></div>
+		<ul class="top">
+			<li>
+				<div class="topa">仅wifi下显示图片</div>
+			</li>
+			<li>
+				<div class="topb">清除缓存</div>
+			</li>
+		</ul>
+		<ul class="con">
+			<li>
+				<div class="cona"><p>邀请码</p></div>
+			</li>
+			<li>
+				<div class="conb"><p>意见反馈</p></div>
+			</li>
+			<li>
+				<div class="conc"><p>客服热线</p></div>
+			</li>
+			<li>
+				<div style="border: none;"><p>版本更新</p></div>
+			</li>
+		</ul>
+		<ul class="main">
+			<li>
+				<div><p>喜欢我们，鼓励打分</p></div>
+			</li>
+			<li>
+				<div><p>分享给小伙伴</p></div>
+			</li>
+			<li>
+				<div><p>隐私政策</p></div>
+			</li>
+			<li>
+				<div style="border: none;"><p>应用推荐</p></div>
+			</li>
+		</ul>
+        <div class="logo">
+        	<div class="logoli"></div>
+        </div>
+        <div class="tuichu">
+        	<div class="tuichuli">
+        		<p>退出登录</p>
+        	</div>
+        </div>
+        
+	</body>
+</html>
+<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(".cona").click(function(){
+		window.location.href="yaoqingma.html";
+	})
+	$(".conb").click(function(){
+		window.location.href="fankui.html";
+	})
+	$(".conc").click(function(){
+		$(".zhezhao").css("display","block");
+	})
+	$(".quxiao").click(function(){
+		$(".zhezhao").css("display","none");
+	})
+	$(".fanhui").click(function(){
+		window.location.href="mine.html";
+	})
+	/*退出登录*/
+	$(".tuichuli").click(function(){
+		localStorage.removeItem("user");
+		window.location.href = "mine.html";
+	})
+</script>

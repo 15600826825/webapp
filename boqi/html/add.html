@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加宠物</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/add.css"/>
+		<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<a class="iconfont icon1" href="myPet.html"><</a>
+			<div>添加宠物</div>
+			<div>保存</div>
+		</div>
+		<div class="main">
+			<div class="iconfont icon-gouzhua icon2"></div>
+		</div>
+		<ul class="conent">
+			<li><a>宠物昵称：</a><a>></a></li>
+			<li><a>宠物性别：</a><a>></a></li>
+			<li><a>宠物生日：</a><a>></a></li>
+			<li><a>宠物血统：</a><a>></a></li>
+			<li><a>宠物品种：</a><a>></a></li>			
+		</ul>
+	</body>
+</html>
+<script src="../js/add.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var scale=1/window.devicePixelRatio;
+	var mstr='initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+	document.getElementById('vp').content=mstr;
+</script>
+<script>
+     var html = document.querySelector("html");
+     console.log(html.offsetWidth)
+     html.style.fontSize = html.offsetWidth/640*100 + "px";
+     addEventListener("resize",function(){      
+         html.style.fontSize = html.offsetWidth/640*100 + "px";
+     },false);
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的宠物</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myPet.css"/>
+		<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<a href="mine.html "><i class="iconfont icon-fanhui"></i></a>
+			<p>我的宠物</p>
+		</div>
+		<div class="main">
+			暂无数据
+		</div>
+		<a class="addpet" href="add.html">+&emsp;添加宠物</a>
+	</body>
+</html>
+<script>
+	var scale=1/window.devicePixelRatio;
+	var mstr='initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+	document.getElementById('vp').content=mstr;
+</script>
+<script>
+     var html = document.querySelector("html");
+     console.log(html.offsetWidth)
+     html.style.fontSize = html.offsetWidth/640*100 + "px";
+     addEventListener("resize",function(){      
+         html.style.fontSize = html.offsetWidth/640*100 + "px";
+     },false);
+</script>
+<script src="../js/myPet.js" type="text/javascript" charset="utf-8"></script>

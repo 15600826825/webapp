@@ -1,0 +1,33 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.swiper-slide img{
+width: 100%;
+height: 100%;
+}
+.swiper-wrapper .pic5 a{
+	width: 56%;
+	height: 2.22rem;
+	background: #fc4a00;
+	color: #fff;
+	font-size:1.2rem;
+	position: absolute;
+	left:22% ;
+	bottom: 16%;
+	border-radius: 5rem;
+	text-align: center;
+	line-height: 2.22rem;
+}
+.swiper-pagination-bullet-active{
+	background: #fc4a00;
+}

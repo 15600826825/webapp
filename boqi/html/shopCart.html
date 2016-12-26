@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body,html{
+				width: 100%;
+				height: 100%;
+			}
+			.header{
+				width: 100%;
+				height: 0.74rem; 
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background: #fff;
+				border-bottom: 0.01rem solid #d5d5d5;
+			} 
+			.header a:nth-child(1){
+				margin-left: 3% ;
+				color: #c87e59;
+			}  
+			.header div{
+				font-size: 0.3rem;
+			}                                            
+			.header a:nth-child(3){
+				font-size: 0.28rem;
+				color: #fc5008;
+				margin-right: 3% ;
+				display: block;
+			}
+			.nav{
+				width: 97%;
+				height: 0.7rem;
+				display: flex;
+				align-items: center;
+				border-bottom: 0.01rem solid #d5d5d5;
+				color: #000;
+				padding-left: 3%;
+			}
+			.list{
+				width: 100%;
+				overflow: hidden;
+			}
+			.mbox{
+				width: 100%;
+				height: 2.20rem;
+				border-bottom: 0.01rem solid #d5d5d5;
+				display: flex;
+				justify-content:center;
+				align-items: center;
+			}
+			.mbox .main{
+				width: 93%;
+				height: 2.20rem;
+				display: flex;
+				justify-content:space-between;
+				align-items: center;
+			}
+			.mbox .main input{
+				width: 0.2rem;
+				height: 0.2rem;
+				border:0.01rem solid #d5d5d5;
+			}
+			.mbox .main img{
+				width: 1.6rem;
+				height: 1.7rem;
+			}
+			.mbox .main .m_ri{
+				width: 65%;
+				height: 1.5rem;
+				font-size: 0.22rem;
+			}
+			.mbox .main .m_ri p{
+				font-size: 0.22rem;
+				line-height: 0.25rem;
+			}
+			.mbox .main .m_ri p:nth-child(1){
+				font-size: 0.22rem;
+				line-height: 0.3rem;
+				padding-bottom: 0.15rem;
+				
+			}
+			.mbox .main .m_ri p:nth-child(2){
+				font-size: 0.22rem;
+				padding-bottom: 0.1rem;
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow:ellipsis ;
+				color: #6a6a6a;
+			}
+			.mbox .main .m_ri p:nth-child(3){
+				color:red;
+				
+			}
+			.mbox .main .m_ri input{
+				height:0.4rem;
+				width:0.4rem;
+				border: 0.01rem solid #d5d5d5;
+				background: #fff;
+				font-size: 0.25rem;
+				text-align: center;
+				line-height: 0.4rem;
+				color: #c66433;
+				margin-top: 0.1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<a href="list.html" class="iconfont"><</a>
+			<div>购物车</div>
+			<a class="btn">删除</a>
+		</div>
+		<div class="nav">
+			<input type="checkbox" class="button"/>波奇商城自营商品
+		</div>
+		<div class="list">
+				<!--<div class="mbox">
+				<div class="main">
+					<input type="checkbox" class="btn"/>
+					<img scr="../img/1.jpg" />
+					<div class="m_ri">
+						<p>miaoshu</p>
+						<p>mingzi</p>
+						<p>jiage</p>
+						数量&nbsp;<input type="text" value="1"/>
+					</div>
+				</div>
+			</div>-->
+		</div>
+	
+	</body>
+</html>   
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var scale=1/window.devicePixelRatio;
+	
+	var mstr='initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+	
+	document.getElementById('vp').content=mstr;
+	
+</script>
+
+<script>
+     var html = document.querySelector("html");
+     console.log(html.offsetWidth)
+     html.style.fontSize = html.offsetWidth/640*100 + "px";
+     addEventListener("resize",function(){
+         html.style.fontSize = html.offsetWidth/640*100 + "px";
+     },false);
+</script>
+<script>
+		var html = "";
+		$.ajax({
+			type:"get",
+			url:"http://datainfo.duapp.com/shopdata/getCar.php",
+			dataType:"jsonp",
+			data:{
+					userID:localStorage.getItem("shangpinID")
+				},
+			async:true,
+			success:function(data){
+				var html = "";
+				for(var i in data){
+						html += '<div class="mbox"><div class="main"><input type="checkbox" class="check"/><img src="'+data[i].goodsListImg+'" alt=""/><div class="m_ri"><p>'+data[i].goodsName+'</p><p>'+data[i].discount+'</p><p>'+data[i].price+'</p>数量&nbsp;<input type="text" value="1"/></div></div></div>';	
+				}	
+					
+				$(".list").html(html);	
+			}
+		});
+		/*<div class="mbox">
+			<div class="main">
+				<input type="checkbox" class="btn"/>
+				<img scr="../img/1.jpg" />
+				<div class="m_ri">
+					<p>miaoshu</p>
+					<p>mingzi</p>
+					<p>jiage</p>
+					数量&nbsp;<input type="text" value="1"/>
+				</div>
+			</div>
+		</div>*/
+		
+		$(".header").on("click",".btn",function(){
+			if($(".button").is(":checked")){
+//				$(".check").is("checked","checked")
+				localStorage.clear();
+				$(".list").html("");
+			}else{
+				$(".check:checked").parent().parent().remove();
+			}
+		})
+		var suo = true;
+		$(".button").click(function(){
+			if(suo){
+				$(".check").prop("checked",true);
+				suo = false;
+			}
+			else{
+				$(".check").prop("checked",false);
+				suo = true;
+			}
+		})
+		/*
+		$(".header").on("click",".btn",function(){
+			if($(".check").is(":checked")){
+				var spid = $(this).attr("data-id");
+				console.log(this)
+				$.ajax({
+					type:"get",
+					url:"http://datainfo.duapp.com/shopdata/updatecar.php",
+					data:{
+						userID:localStorage.getItem("shangpinID"),
+						goodsID:spid,
+						number:0
+					}
+				});
+			}
+		})*/
+</script>
+
+

@@ -1,0 +1,418 @@
+/*top栏*/
+.headers{
+	width:100%;
+	height:0.74rem;
+}
+.header{
+	width:100%;
+	height:0.74rem;
+	background:#f4f4f4;
+	position:fixed;
+	z-index:2;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	top:0;
+}
+.header #top_search{
+	width:70%;
+	height:0.48rem;	
+	border:none;
+	background:#dedede;
+	border-radius:0.1rem;
+	font-size: .26rem;
+}
+.header a{
+	width:15%;
+	height:0.74rem;
+	display:block;
+	text-align:center;	
+}
+.header a i{
+	font-size:0.26rem;
+	color:#fc4a00;
+	line-height:0.74rem;
+}
+.header a .i2{
+	font-size:0.36rem;
+}
+/*banner栏*/
+.swiper-container{
+	width:100%;
+	height:2.7rem;
+}
+.swiper-slide{
+	width:100%;
+	height:2.7rem;
+}
+.banner_1{
+	background:url(../img/shop/banner01.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+.banner_2{
+	background:url(../img/shop/banner02.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+.banner_3{
+	background:url(../img/shop/banner03.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+.banner_4{
+	background:url(../img/shop/banner04.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+.banner_5{
+	background:url(../img/shop/banner05.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+.banner_6{
+	background:url(../img/shop/banner06.jpg) no-repeat left bottom;
+	background-size:100% 100%;
+}
+/*二级tab切换*/
+.two_tab{
+	width:100%;
+	height:0.67rem;
+	position:relative;
+	/*overflow:hidden;*/
+	background:#f6f6f6;
+	border-bottom:0.01rem solid #dbdbdb;
+	display:flex;
+	justify-content:space-between;
+}
+.po_tab{
+	width:25%;
+	height:0.67rem;
+	line-height:0.67rem;
+	position:absolute;
+	top:0.01rem;
+	left:-0.02rem;
+	text-align:center;
+	border-bottom:0.01rem solid white;
+	border-right:0.01rem solid #dbdbdb;
+	border-left:0.01rem solid #dbdbdb;
+	background:white url(../img/shop/tab_tagbg.jpg) no-repeat left top;
+	background-size:100%;
+}
+.po_tab_right{
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+.po_tab p{
+	line-height:0.68rem;
+	text-align:center;
+	font-size:0.18rem;
+	color:#fc4a00;
+}
+.tab_title{
+	width:25%;
+	height:0.67rem;
+	line-height:0.67rem;
+	text-align:center;
+	font-size:0.18rem;
+	color:#a5a5a5;
+}
+	/*二级tab主体内容*/
+.tab_content{
+	width:100%;
+	height:2.02rem;
+	display:none;	
+	flex-wrap:wrap;
+	/*justify-content: space-between;*/
+	background:#ffffff;
+	border-bottom:0.01rem solid #dbdbdb;
+}
+.dog_display{
+	display:flex;
+}
+.dog_food_kind{
+	display:block;
+	width:25%;
+	height:0.91rem;
+	padding-top:0.1rem;
+	text-align:center;
+}
+.dog_food_kind img{
+	width:0.5rem;
+	height:0.5rem;
+}
+.dog_food_kind p{
+	line-height:0.38rem;
+	font-size:0.16rem;
+	color:black;
+}
+.kong_1{
+	width:100%;
+	height:0.36rem;
+	background:#efefef;
+	border-top:0.02rem solid #dbdbdb;
+	border-bottom:0.02rem solid #dbdbdb;
+}
+/*狗狗商品主体内容*/
+.main{
+	width:100%;
+	height:100%;
+}
+.dog_hot_title{
+	width:100%;
+	height:0.56rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-top:0.01rem solid #dbdbdb;
+	border-bottom:0.02rem solid #dbdbdb;
+}
+.dog_hot_title p{
+	height:0.26rem;
+	width:90%;
+	font-size:0.24rem;
+	border-left:0.08rem solid #ff0000;
+}
+.hot_one{
+	width:100%;
+	height:2.52rem;
+	display:flex;
+	flex-wrap:wrap;
+	boeder-bottom:0.02rem solid #ff0000;
+}
+.hot_one_left{
+	width:50%;
+	height:2.51rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	background:url(../img/shop/line.jpg) repeat-y right; 
+}
+.hot_one_left img{
+	width:2rem;
+	height:2.39rem;
+}
+.hot_one_right{
+	width:50%;
+	height:2.52rem;
+	display:flex;
+	flex-wrap:wrap;
+}
+.hot_one_top{
+	width:100%;
+	height:1.25rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom:0.02rem solid #dbdbdb;
+}
+.hot_one_top img,.hot_one_bottom img{
+	width:2.38rem;
+	height:1.1rem;
+}
+.hot_one_bottom{
+	width:100%;
+	height:1.25rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom:0.02rem solid #dbdbdb;
+}
+.hot_two{
+	width:100%;
+	height:1.2rem;
+	display:flex;
+	flex-wrap:wrap;
+	border-top:0.02rem solid #dbdbdb;
+	border-bottom:0.02rem solid #dbdbdb;
+}
+.hot_two .two_left{
+	width:50%;
+	height:1.22rem;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.hot_two .two_left img{
+	width:2.49rem;
+	height:0.89rem;
+}
+.hot_two .two_right{
+	width:50%;
+	height:1.22rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.hot_two .two_right img{
+	width:2.38rem;
+	height:0.89rem;
+}
+
+
+.doctorpic_1{
+	border:none;
+	height:2.51rem;
+	display:flex;
+	align-items: center;
+}
+.doctorpic_1 img{
+	width:2.19rem;
+	height:2.24rem;
+}
+.doctorpic_2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.doctorpic_2 img{
+	width:2.35rem;
+	height:2.14rem;
+}
+.hot_two .doctor_two_left{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.hot_two .doctor_two_left img{
+	width:2.29rem;
+	height:1.07rem;
+}
+.hot_two .doctor_two_lefta,.hot_two .doctor_two_righta{
+	align-items: center;
+	justify-content: center;
+}
+.hot_two .doctor_two_lefta img{
+	width:2.29rem;
+	height:1.11rem;
+}
+.hot_two .doctor_two_right img{
+	width:2.35rem;
+	height:1.07rem;
+}
+.hot_two .doctor_two_righta img{
+	width:2.35rem;
+	height:1.11rem;
+}
+.hot_two .line_bg{
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+.hot_two .line_bga{
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+
+
+.main .daylife_one{
+	height:2.34rem;
+	align-items: center;
+	justify-content: center;
+}
+ .main .daylife_two{
+	height:1.23rem;
+	align-items: flex-end;
+	justify-content: center;
+}
+.main .hot_one .daylife{
+	width:50%;
+	height:2.34rem;
+}
+ .main .daylife_two .daylife{
+ 	display:flex;
+ 	align-items: flex-end;
+ }
+.main .hot_one .daylife img{
+	width:2.69rem;
+	height:2.31rem;
+}
+.main .hot_two .daylife img{
+	width:2.69rem;
+	height:1.17rem;
+}
+/*猫猫的main*/
+.cat_main{
+	display:none;
+}
+/*兔兔的main*/
+.tutu_main{
+	width:100%;
+	display:none;
+}
+.hot_tutu{
+	width:100%;
+	height:4.72rem;
+	display:flex;
+	flex-wrap:wrap;
+}
+.tutu_pic{
+	width:50%;
+	height:2.34rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom:0.02rem solid #a5a5a5;
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+.tutu_pic img{
+	width:1.5rem;
+	height:2.03rem;
+}
+/*水族的main*/
+.shuizu_main{
+	width:100%;
+	display:none;
+}
+.hot_shuizu{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+.shuizu_pic{
+	width:50%;
+	height:2.34rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom:0.01rem solid #a5a5a5;
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+.shuizu_pic img{
+	width:1.5rem;
+	height:2.03rem;
+}
+.hot_shuizu_one,.hot_shuizu_three{
+	width:100%;
+	height:2.36rem;
+	display:flex;
+	border-bottom:0.02rem solid #a5a5a5;
+}
+.hot_shuizu_two,.hot_shuizu_four,.hot_shuizu_five{
+	width:100%;
+	height:1.2rem;
+	display:flex;
+	border-bottom:0.02rem solid #a5a5a5;
+}
+.shuizu_one{
+	width:50%;
+	height:2.36rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.shuizu_one img{
+	width:2.13rem;
+	height:2.16rem;
+}
+.shuizu_two{
+	width:50%;
+	height:1.2rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.shuizu_two img{
+	width:2.45rem;
+	height:1.03rem;
+}
+.shuline{
+	background:url(../img/shop/line.jpg) repeat-y right;
+}
+/*标准尾样式修改*/
+.footer a:nth-child(3) {
+  color: #fa631a;
+  z-index: 10;
+}

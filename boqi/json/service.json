@@ -1,0 +1,82 @@
+[
+	{
+		"id":0,
+		"src":"../img/service/near1.jpg",
+		"name":"派多格宠物（红石路店）",
+		"price":26,
+		"assess":"★★★★☆",
+		"sold":26,
+		"address":"嘉定镇&nbsp;<span class='appro'>认证</span>",
+		"range":1067.48
+	},
+	{
+		"id":1,
+		"src":"../img/service/near2.jpg",
+		"name":"星源宠物店",
+		"price":26,
+		"assess":"☆☆☆☆☆",
+		"sold":5,
+		"address":"外冈",
+		"range":1067.74
+	},
+	{
+		"id":2,
+		"src":"../img/service/near3.jpg",
+		"name":"悦康缘宠物（北大街店）",
+		"price":26,
+		"assess":"★★★★★",
+		"sold":22,
+		"address":"嘉定镇&nbsp;<span class='appro'>认证</span>",
+		"range":1067.91
+	},
+	{
+		"id":3,
+		"src":"../img/service/near4.jpg",
+		"name":"花样萌宠",
+		"price":33,
+		"assess":"★★★★★",
+		"sold":1177,
+		"address":"嘉定镇&nbsp;<span class='appro'>认证</span>",
+		"range":1068.31
+	},
+	{
+		"id":4,
+		"src":"../img/service/near5.jpg",
+		"name":"有家宠物（中下塘街店）",
+		"price":26,
+		"assess":"★★★★★",
+		"sold":123,
+		"address":"嘉定镇",
+		"range":1069.36
+	},
+	{
+		"id":5,
+		"src":"../img/service/near6.jpg",
+		"name":"莎莎宠物（沙霞路店）",
+		"price":28,
+		"assess":"★★★★★",
+		"sold":106,
+		"address":"嘉定镇",
+		"range":1069.36
+	},
+	{
+		"id":6,
+		"src":"../img/service/near7.jpg",
+		"name":"Baby Pets 宠物生活馆",
+		"price":26,
+		"assess":"★★☆☆☆",
+		"sold":2,
+		"address":"无&nbsp;<span class='appro'>认证</span>",
+		"range":1069.76
+	},
+	{
+		"id":7,
+		"src":"../img/service/near8.jpg",
+		"name":"贝特多格宠物",
+		"price":26,
+		"assess":"★★★★★",
+		"sold":8,
+		"address":"嘉定镇&nbsp;<span class='appro'>认证</span>",
+		"range":1069.94
+	}
+]

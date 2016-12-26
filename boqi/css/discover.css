@@ -1,0 +1,199 @@
+html,body{
+	background: #DEDEDE;
+}
+.search{
+	position:fixed; top: 0; left: 0; width: 100%; height: 0.74rem; background:#ff5e30; display: flex; justify-content: center; align-items: center;z-index: 10;
+}
+.search-input{
+	width: 80%; height: 0.49rem; font-size: 0.45rem; display: flex;  align-items: center; 
+	background: #dd4726; color: white;
+}
+.txt{
+	width: 90%; height:0.45rem; border: none; outline: none; background: #dd4726;
+	font-size: 0.3rem;
+}
+.searchNull{
+	height: 0.74rem;
+} 
+/**************************************************导航********************************************************/
+.swiper-container{
+	width: 100%; height: 3rem; background: red;
+}
+.swiper-container .swiper-slide{
+	 height: 3rem;
+}
+.swiper-container .swiper-slide img{
+	width: 100%;
+}
+.nav{
+	width: 100%; height: 1.5rem; display: flex; background: white;
+}
+.nav-fenlei{
+	width: 20%; height: 1.5rem; display: flex; justify-content: center; align-items:center;
+	flex-direction: column;
+}
+.nav-fenlei h2{
+	line-height: 0.5rem;
+}
+.nav-fenlei p{
+	width: 0.6rem; height: 0.6rem;  border-radius: 50%; display: flex; justify-content: center;
+	align-items: center; color: white;
+}
+.nav-fenlei:nth-child(1) p{
+	background: #ff5947;
+}
+.nav-fenlei:nth-child(2) p{
+	background: #6dd161;
+}
+.nav-fenlei:nth-child(3) p{
+	background: #ff8424;
+}
+.nav-fenlei:nth-child(4) p{
+	background: #fdc510;
+}
+.nav-fenlei:nth-child(5) p{
+	background: #05d3c7;
+}
+/**********************************************热门活动*******************************************/
+.hot-activity{
+	width: 100%; height: 3.8rem;margin-top: 0.2rem; background: white; display: flex; justify-content: center;
+	 overflow: hidden; flex-wrap: wrap;
+}
+.hot-activity .p1{
+	width: 90%; height: 0.8rem;  display: flex; justify-content: space-between; line-height: 0.8rem;
+	background: white;
+}
+.hot-activity p span a{
+	color: black;
+}
+.swiper-container-activity{
+	width: 100%; height: 3rem;
+}
+.swiper-slide-active1{
+	width: 100%; height: 3rem; background: white; /*margin-right: 0.5rem;*/
+}
+.swiper-slide-active1 img{
+	width: 95%; height: 2.6rem;
+}
+
+.swiper-slide-active1 p{
+	text-align: center; line-height: 0.4rem;
+}
+/***********************************************热门话题**************************************************/
+.hot-topic{
+	width: 100%; height: 3.2rem;margin-top: 0.2rem; background: white; display: flex; justify-content: center;
+    overflow: hidden; flex-wrap: wrap;
+}
+.hot-topic .p1{
+	width: 90%; height: 0.8rem;  display: flex; justify-content: space-between; line-height: 0.8rem;
+	background: white;
+}
+.hot-topic p span a{
+	color: black;
+}
+.swiper-container-topic{
+	width: 100%; height: 3rem;
+}
+.swiper-slide-topic{
+	width: 3.1rem; height: 2.4rem; background: white; text-align: center;
+}
+.swiper-slide-topic img{
+	width: 80%;
+}
+.swiper-slide-topic p{
+	text-align: center; line-height: 0.6rem;
+}
+/**************************************************热门达人*********************************************/
+.hot-master{
+	width: 100%; height: 2.4rem;margin-top: 0.2rem; background: white; display: flex; justify-content: center;
+	 overflow: hidden; flex-wrap: wrap;
+}
+.hot-master .p1{
+	width: 90%; height: 0.8rem;  display: flex; justify-content: space-between; line-height: 0.8rem;
+	background: white;
+}
+.hot-master p span a{
+	color: black;
+}
+.swiper-container-master{
+	width: 100%; height: 1.6rem;
+}
+.swiper-slide-master{
+	width: 3.1rem; height: 1.6rem; background: white; text-align: center;
+}
+.swiper-slide-master img{
+	width: 80%; border-radius: 50%; height: 60%;
+}
+.swiper-slide-master p{
+	text-align: center; line-height: 0.4rem;
+}
+/***************************************************热门问答**************************************************/
+.hot-QA{
+	width: 100%; height: 3.8rem;margin-top: 0.2rem; background: white; display: flex; justify-content: center;
+	 overflow: hidden; flex-wrap: wrap;
+}
+.hot-QA .p1{
+	width: 90%; height: 0.8rem;  display: flex; justify-content: space-between; line-height: 0.8rem;
+	background: white;
+}
+.hot-QA p span a{
+	color: black;
+}
+.swiper-container-QA{
+	width: 100%; height: 3rem;
+}
+.swiper-slide-QA{
+	width: 100%; height: 2.4rem; background: white; border: /*solid #DEDEDE 1px;*/ /*margin-right: 0.2rem;*/
+	overflow: hidden;
+}
+.swiper-slide-QA p{
+	text-align: center; line-height: 0.4rem;
+}
+.question{
+	width: 90%; height: 0.95rem; font-size: 0.2rem; line-height: 0.7rem;
+	padding-left: 0.1rem; border-top: solid #DEDEDE 1px; border-left: solid #DEDEDE 1px; border-right: solid #DEDEDE 1px;
+}
+.answer{
+	width: 90%; height: 1.4rem; display: flex; border: solid #DEDEDE 1px; padding-left: 0.1rem;
+}
+.photo{
+	width: 30%; height: 1.4rem;  overflow: hidden; 
+	display: flex; justify-content: center; align-items: center;
+}
+.photo img{
+	width: 60%; height: 60%; border-radius: 50%;
+}
+.user-answer{
+	width: 70%; height: 1.4rem; line-height: 0.3rem; font-size: 0.2rem;
+}
+/*****************************************************热门测试******************************************************/
+.hot-test{
+	width: 100%; height: 3.2rem;margin-top: 0.2rem; background: white; display: flex; justify-content: center;
+	 overflow: hidden; flex-wrap: wrap; margin-bottom: 1rem;
+}
+.hot-test .p1{
+	width: 90%; height: 0.8rem;  display: flex; justify-content: space-between; line-height: 0.8rem;
+	background: white;
+}
+.hot-test p span a{
+	color: black;
+}
+.swiper-container-test{
+	width: 100%; height: 3rem;
+}
+.swiper-slide-test{
+	width: 3.1rem; height: 2.4rem; background: white; text-align: center;
+}
+.swiper-slide-test img{
+	width: 80%;
+}
+.swiper-slide-test p{
+	text-align: center; line-height: 0.6rem;
+}
+/*标准尾样式修改*/
+.footer{
+	z-index: 20;
+}
+.footer a:nth-child(2) {
+  color: #fa631a;
+}

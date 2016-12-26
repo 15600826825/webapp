@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/animate.min.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;	
+			}
+			html,body{
+				width:100%;
+				height: 100%;
+				background: #e4e4e4;	
+				overflow: hidden;
+			}
+			
+			.fixtop{
+				width:100%;
+				height: 3rem;
+				position: fixed;
+				top: 0;
+				display: flex;
+				justify-content: center;
+				background: #fff;
+			}
+			.fixtopli{
+				width:90%;
+				height: 3rem;
+				display: flex;
+				 font-size: 0.8rem;
+			}
+			.fixtopli div:nth-child(1){
+				width:33.3%;
+		    	background:url(../img/set/zuosanjiao.jpg) left center no-repeat;
+		    	background-size:0.6rem ;
+			}
+			.fixtopli div:nth-child(2){
+				width:33.3%;
+		    	display:flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	text-align: center;
+			}
+			.bubai{
+				width:100%;
+				height:3rem ;
+			}
+			.nav{
+				width:100%;
+				height: 3rem;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+			}
+			.navli{
+				width:90%;
+				height: 3rem;
+				display: flex;
+				justify-content: center;
+			}
+			.navli div{
+				width:50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 0.8rem;
+				
+			}
+			.navp1,.navp2{
+				
+				line-height: 2.8rem;
+				
+			}
+			.active{
+				border-bottom: 0.1rem solid #fc4a00;
+			}
+			.top{
+				width:100%;
+				background: #fff;
+			}
+			.top li{
+				width:100%;
+				height: 3rem;
+				display: flex;
+				border-bottom: 1px solid #e4e4e4;
+				justify-content: center;
+			}
+			.top li div{
+				width:90%;
+				display: flex;
+				align-items: center;
+				background: url(../img/set/sanjiao.jpg)right center no-repeat;
+				background-size:0.4rem ;	
+			}
+			.sp1{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #f66046;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.topsp1{
+				display: block;
+				margin-left: 0.5rem;
+				font-size: 0.6rem;
+			
+			}
+			.icon-pinglun01{
+				font-size:1rem;
+				color: #fff;
+			}
+			.sp2{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #fe8428;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.icon-iconfontzan{
+				font-size:1rem;
+				color: #fff;
+			}
+			.sp3{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #64d459;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.icon-aite{
+				font-size:1rem;
+				color: #fff;
+			}
+			.sp4{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #0fcec4;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.icon-wode{
+				font-size:1rem;
+				color: #fff;
+			}
+			.sp5{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #ffc601;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.sp5 img{
+				width:1.7rem;
+			}
+			.sp6{
+				display: block;
+				width:2rem;
+				height: 2rem;
+				background: #389ff4;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.icon-2{
+				font-size:1rem;
+				color: #fff;
+			}
+			.shangcheng{
+				width:100%;
+				height: 23rem;
+				background: #f0efed;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				overflow: hidden;
+
+			}
+			.shengchengli{
+				width:90%;
+				height:5rem;
+				display: flex;
+			    margin-top: 8rem;
+				margin-left: 0.8rem;
+				justify-content: center;
+				align-items: center;
+				font-size: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bubai"></div>
+		<div class="fixtop">
+					<div class="fixtopli">
+						<div class="a"></div>
+						<div><p>消息中心</p></div>
+					</div>
+		</div>
+		<div class="nav">
+			<div class="navli">
+				<div>
+					<p class="navp1">发现通知</p>
+				</div>
+				<div>
+					<p class="navp2">商城服务</p>
+				</div>
+			</div>
+		</div>
+		<ul class="top">
+			<li class="daily"><div><span class="sp5"><img src="../img/set/biqi.jpg"/></span><span class="topsp1">波奇日报</span></div></div></li>
+			<li class="pinglun"><div><span class="sp1 iconfont icon-pinglun01"></span ><span class="topsp1">评论</span></div></li>
+			<li class="zan"><div><span class="sp2 iconfont icon-iconfontzan"></span><span class="topsp1">赞</span></div></li>
+			<li class="wode"><div><span class="sp3 iconfont icon-aite"></span><span class="topsp1">@我的</span></div></li>
+			<li class="pengyou"><div><span class="sp4 iconfont icon-wode"></span><span class="topsp1">新的朋友</span></div></div></li>
+			<li class="tongzhi"><div><span class="sp6 iconfont icon-2"></span><span class="topsp1">通知</span></div></div></li>
+		</ul>
+		<div class="shangcheng" >
+			<div class="shengchengli">
+				<p>暂时没数据</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(".navp1 ").click(function(){
+		$(this).addClass("active")
+		$(".navp2").removeClass("active")
+		$(".top").css("display","block")
+		$(".shangcheng").css("display","none")
+		
+		
+	})
+	$(".navp2 ").click(function(){
+		$(this).addClass("active")
+		$(".navp1").removeClass("active")
+		$(".top").css("display","none")
+		$(".shangcheng").css("display","block")
+	})
+	$(".a").click(function(){
+		window.location.href = "mine.html"
+	})
+	$(".daily").click(function(){
+		window.location.href = "daily.html"
+	})
+	$(".pinglun").click(function(){
+		window.location.href = "news-pinglun.html";
+	})
+	$(".zan").click(function(){
+		window.location.href = "news-zan.html";
+	})
+	$(".wode").click(function(){
+		window.location.href = "news-wode.html";
+	})
+	$(".pengyou").click(function(){
+		window.location.href = "news-friend.html";
+	})
+	$(".tongzhi").click(function(){
+		window.location.href = "news-tongzhi.html";
+	})
+	
+	
+//  $(".navp1").click(function(){
+//  	$(".navp1").css("border-bottom","0.1rem solid #fc4a00;")
+//  })
+</script>

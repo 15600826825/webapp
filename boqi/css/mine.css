@@ -1,0 +1,286 @@
+
+body{
+	background: #efefef;
+}
+
+/*header*/
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 94%;
+	height: 0.74rem;
+	padding: 0 3%;
+	background: #ff5e30;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+}
+.header img{
+	width: 0.98rem;
+}
+.header i{
+	font-size: 0.32rem;
+	color: #fff;
+}
+.headerNull{
+	height: 0.74rem;
+}
+
+/*banner*/
+.banner{
+	width: 100%;
+	height: 3.3rem;
+	position: relative;
+}
+.banner img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.no{
+	display: block;
+	width: 2rem;
+	position: absolute;
+	top: 1rem;
+	left: 50%;
+	margin-left: -1rem;
+	text-align: center;
+}
+.has{
+	display: flex;
+	width: 94%;
+	height: 0.98rem;
+	padding: 0 3%;
+	position: absolute;
+	top: 1.5rem;
+	left: 0;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 0.24rem;
+	display: none;
+}
+.has div:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+.has b{
+	margin: 0 0.15rem 0.15rem;
+	font-weight: 100;
+}
+.has div img:nth-child(3){
+	width: 0.95rem;
+	height: 0.27rem;
+	margin-bottom: 0.15rem;
+}
+.has div:nth-child(2){
+	margin-bottom: 0.15rem;
+	width: 1.85rem;
+	height: 0.38rem;
+	border-radius: 0.19rem;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	line-height: 0.38rem;
+}
+.banner a img{
+	width: 0.79rem;
+	height: 0.79rem;
+	margin: 0 auto;
+}
+.banner p{
+	line-height: 0.7rem;
+	color: #fff;
+	font-size: 0.22rem;
+}
+
+
+/*个人    笔记*/
+.wode{
+	width: 100%;
+	height: 0.68rem;
+	border-top: 0.01rem solid #ececec;
+	border-bottom: 0.01rem solid #ececec;
+	position: relative;
+	background: #fff;
+}
+.wode li{
+	width: 49.5%;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #4f4f4f;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.wode li:nth-child(1){
+	left: 0;
+	border-right: 0.01rem solid #e6e6e6;
+}
+.wode .wode_active{
+	color: #f2611e;
+}
+.wode li:nth-child(3){
+	width: 49.5%;
+	height: 0.04rem;
+	background: #f2611e;
+	position: absolute;
+	left: 0;
+	top: 0.64rem;
+}
+
+
+/*个人中心*/
+.dingdan{
+	width: 100%;
+	height: 1.75rem;
+	background: #fff;
+	margin-top: 0.15rem;
+}
+.dingdan_all{
+	width: 94%;
+	height: 0.57rem;
+	padding: 0 3%;
+	border-bottom: 0.01rem solid #e4e4e4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.24rem;
+	color: #5d5d5d;
+}
+.dingdan_all a{
+	color: #5d5d5d;
+	font-size: 0.2rem;
+}
+.dingdan ul{
+	width: 100%;
+	height: 1.17rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.dingdan ul li{
+	color: #5d5d5d;
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.dingdan ul li i{
+	font-size: 0.4rem;
+	color: #e87968;
+}
+.zhanghu{
+	width: 100%;
+	height: 2.45rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 0.15rem;
+}
+.zhanghu ul{
+	width: 100%;
+	height: 2.45rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.zhanghu li{
+	width: 25%;
+	color: #5d5d5d;
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.zhanghu ul li i{
+	font-size: 0.4rem;
+	color: #e87968;
+}
+
+
+.biji{
+	display: none;
+}
+/*宠物*/
+.chongwu{
+	width: 94%;
+	height: 0.77rem;
+	background: #fff;
+	margin-top: 0.15rem;
+	padding: 0 3%;
+	border-bottom: 0.01rem solid #e4e4e4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.24rem;
+	color: #5d5d5d;
+}
+.chongwu a{
+	color: #5d5d5d;
+}
+
+.wodebiji{
+	width: 94%;
+	height: 0.77rem;
+	background: #fff;
+	margin-top: 0.15rem;
+	padding: 0 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.24rem;
+	color: #5d5d5d;
+}
+.tianjia{
+	width: 100%;
+	height: 5.13rem;
+	background: #fff;
+	color: #fc602f;
+	overflow: hidden;
+}
+.tianjia div{
+	margin: 0.88rem auto 0;
+	width: 0.77rem;
+	height: 0.77rem;
+	border: 0.01rem solid #fc602f;
+	border-radius: 50%;
+	line-height: 0.77rem;
+	text-align: center;
+	position: relative;
+}
+.tianjia div b{
+	display: block;
+	width: 0.23rem;
+	height: 0.23rem;
+	background: #fff;
+	font-size: 0.23rem;
+	text-align: center;
+	line-height: 0.23rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.tianjia i{
+	font-size: 0.38rem;
+}
+.tianjia p{
+	width: 2.28rem;
+	height: 0.48rem;
+	font-size: 0.22rem;
+	line-height: 0.48rem;
+	text-align: center;
+	border: 0.01rem solid #fc602f;
+	margin: 0.14rem auto 0;
+}
+
+
+/*标准尾修改*/
+.footer a:nth-child(5){
+	color: #fa631a;
+}
+
+

@@ -1,0 +1,259 @@
+img {
+  display: block;
+}
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 96%;
+  padding: 0 2%;
+  background: #FFF;
+  line-height: .74rem;
+  font-size: .24rem;
+  z-index: 10;
+}
+header .head_p1 {
+  width: 17%;
+  color: #b66343;
+}
+header .head_p1 img {
+  display: inline;
+  width: 0.10rem;
+  height: 0.08rem;
+}
+header input {
+  width: 60.15%;
+  height: .46rem;
+  padding-left: 3%;
+  margin-top: .14rem;
+  background: #dedede;
+  border: #ededed 1px solid;
+  outline: none;
+  font-size: .26rem;
+}
+header .head_p2 {
+  width: 14.8%;
+  text-align: right;
+  color: #dd6d3d;
+}
+/*headerNull*/
+.headerNull {
+  height: .74rem;
+}
+/*banner*/
+.swiper-container {
+  width: 100%;
+}
+.swiper-container img {
+  width: 100%;
+}
+/*dangqian*/
+.dangqian {
+  width: 94%;
+  background: #f1f3f2;
+  padding: 0 3%;
+  border-bottom: #e5e7e6 1px solid;
+  line-height: .62rem;
+  font-size: .24rem;
+  color: #3d3f3e;
+}
+.dangqian a {
+  float: right;
+  color: #a3a5a4;
+}
+/*nav*/
+.nav {
+  position: relative;
+  display: flex;
+  width: 94%;
+  height: .67rem;
+  margin: 0 3%;
+  border-bottom: #e5e7e6 1px solid;
+  align-items: center;
+}
+.nav div {
+  width: 50%;
+  border-right: #e5e7e6 1px solid;
+  line-height: .48rem;
+  text-align: center;
+  font-size: .24rem;
+}
+.nav div:nth-child(2) {
+  border-right: none;
+}
+.nav .nav_active {
+  color: #fd7028;
+}
+.nav .nav_posi {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50%;
+}
+/*list*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  display: none;
+}
+.list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 1.3rem;
+  font-size: .2rem;
+  color: #636363;
+}
+.list div p:nth-child(1) {
+  font-size: .5rem;
+}
+.list div p:nth-child(2) {
+  line-height: .48rem;
+  font-size: .2rem;
+}
+.list1 div:nth-child(1) p:nth-child(1) {
+  color: #62c6fa;
+}
+.list1 div:nth-child(2) p:nth-child(1) {
+  color: #ffb519;
+}
+.list1 div:nth-child(3) p:nth-child(1) {
+  color: #f77198;
+}
+.list1 div:nth-child(4) p:nth-child(1) {
+  color: #ff9662;
+}
+.list1 div:nth-child(5) p:nth-child(1) {
+  color: #ea7047;
+}
+.list1 div:nth-child(6) p:nth-child(1) {
+  color: #f76868;
+}
+.list1 div:nth-child(7) p:nth-child(1) {
+  color: #a4d158;
+}
+.list1 div:nth-child(8) p:nth-child(1) {
+  color: #c9cccf;
+}
+.list2 div:nth-child(1) p:nth-child(1) {
+  color: #ff9763;
+}
+.list2 div:nth-child(2) p:nth-child(1) {
+  color: #f8b90c;
+}
+.list2 div:nth-child(3) p:nth-child(1) {
+  color: #63c2ff;
+}
+.list2 div:nth-child(4) p:nth-child(1) {
+  color: #e8784a;
+}
+.list2 div:nth-child(5) p:nth-child(1) {
+  color: #eb6d5f;
+}
+.list2 div:nth-child(6) p:nth-child(1) {
+  color: #f87192;
+}
+.list2 div:nth-child(7) p:nth-child(1) {
+  color: #c9cdce;
+}
+.list_active {
+  display: flex;
+}
+/*null1*/
+.null1 {
+  height: .3rem;
+  background: #efefef;
+}
+/*near_tit*/
+.near_tit {
+  overflow: hidden;
+  width: 90%;
+  padding: 0 4%;
+  background: #f8f8f8;
+  border-left: .1rem #8fc31f solid;
+  border-bottom: .01rem #f0f0f0 solid;
+  line-height: .89rem;
+  font-size: .34rem;
+  font-weight: bold;
+  color: #383838;
+}
+.near_tit a {
+  float: right;
+  font-size: .28rem;
+  font-weight: 100;
+  color: #989898;
+  text-align: right;
+}
+/*near*/
+.near {
+  overflow: hidden;
+  width: 100%;
+}
+.near .nearMain {
+  display: flex;
+  width: 94%;
+  height: 2.17rem;
+  padding: .2rem 3% 0;
+}
+.near .nearMain img {
+  width: 26%;
+  height: 1.6rem;
+  padding-right: 3%;
+}
+.near .nearMain div {
+  width: 67%;
+}
+.near .nearMain div h2 {
+  padding-top: .07rem;
+  font-size: .28rem;
+  font-weight: bold;
+  color: #333;
+}
+.near .nearMain div h2 span {
+  float: right;
+  padding-top: .06rem;
+  font-size: .16rem;
+  font-weight: 100;
+  color: #7f7f7f;
+}
+.near .nearMain div h2 .price {
+  padding-top: .03rem;
+  font-size: .26rem;
+  color: #ff6627;
+}
+.near .nearMain div h3 {
+  padding-top: .28rem;
+  line-height: .3rem;
+  font-size: .2rem;
+  color: #757575;
+}
+.near .nearMain div h3 span {
+  font-size: .3rem;
+  color: #ffc30c;
+}
+.near .nearMain div p {
+  padding-top: .33rem;
+  line-height: .32rem;
+  font-size: .22rem;
+  color: #757575;
+}
+.near .nearMain div p .appro {
+  padding: .08rem .05rem;
+  background: #ff6666;
+  border-radius: .05rem;
+  font-size: .18rem;
+  color: #fff;
+}
+.near .nearMain div p .range {
+  float: right;
+}
+/*标准尾样式修改*/
+.footer a:nth-child(4) {
+  z-index: 10;
+  color: #fa631a;
+}

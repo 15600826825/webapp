@@ -1,0 +1,121 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #efefef;
+}
+.header{
+	width: 100%;
+	height: 0.74rem; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+} 
+.header a:nth-child(1){
+	margin-left: 3% ;
+}  
+.header div{
+	font-size: 0.3rem;
+}                                            
+.header a:nth-child(3){
+	font-size: 0.28rem;
+	color: #fc5008;
+	margin-right: 3% ;
+}
+.main{ 
+	width: 93%;
+	height: 1.56rem;
+	margin: 0.2rem auto;
+	position: relative;
+}
+.main .wode{
+	background: #fff;
+	position: absolute;
+	left: 0.1rem;
+	font-size: 0.6rem;
+	color: #c0c0c0;
+	top: 0.05rem;
+}
+.main .mima{
+	background: #fff;
+	position: absolute;
+	left: 0.1rem;
+	font-size: 0.6rem;
+	color: #c0c0c0;
+	bottom: 0.05rem;	
+}
+.main input{
+	width: 100%;
+	height: 0.78rem;
+	border: 0.02rem solid #f3f3f3;
+	font-size: 0.25rem;
+	text-indent: 0.8rem;
+	color: #999;
+	line-height: 0.78rem;
+	border-radius: 0.05rem;
+	outline: 0;
+}
+.maint{
+	width: 93%;
+	height: 0.74rem;
+	margin:0.2rem auto;
+}
+.maint input:nth-child(1){
+	width: 70%;
+	height: 0.74rem;
+	color: #c5c5cb;
+	border: 0.01rem solid #dfdfdf;
+	float: left;
+	border-right: none;
+	text-indent: 0.4rem;
+	outline: 0;
+	font-size: 0.25rem;
+}
+.maint input:nth-child(2){
+	width: 29.5%;
+	height: 0.76rem;
+	background: #8fc31f;
+	color: #fff;
+	border: 0.01rem solid #dfdfdf;
+	float: left;
+	border-left: none;
+	outline: 0;
+	font-size: 0.25rem;
+}
+
+
+
+.zhuce{
+	width: 93%;
+	height:0.72rem ;
+	margin:0 auto 0.26rem;
+	background: #fc3500;
+	line-height: 0.72rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+	border-radius: 0.05rem;
+}
+.mainc{
+	width: 91%;
+	font-size: 0.2rem;
+	margin: 0 auto;
+	color: #a2a2a2;
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	color: #5e5e5e;
+	line-height: 0.26rem;
+}
+.mainc input{
+	width: 0.26rem ;
+	height: 0.26rem;
+	margin-right: 0.15rem;
+}
+.mainc span a{
+	color: #fb601f;
+}

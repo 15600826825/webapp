@@ -1,0 +1,113 @@
+/*header*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .74rem;
+	background: #fff;
+	box-shadow: #d6d6d6 0 .03rem;
+	line-height: .74rem;
+	font-size: .36rem;
+	text-align: center;
+	z-index: 10;
+}
+.headerTab{
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: 70%;
+	display: flex;
+}
+.headerTab p{
+	width: 33%;
+	line-height: .7rem;
+	font-size: .3rem;
+	text-align: center;
+}
+.active{
+	border-bottom: #ff6627 .04rem solid;
+}
+.headerA{
+	position: absolute;
+	left: 4%;
+	top: 0;
+	display: block;
+	line-height: .74rem;
+	color: #cb5d2c;
+}
+.headerA i{
+	font-size: .46rem;
+}
+.caidan{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 15%;
+	font-size: .38rem;
+}
+.headerNull{
+	height: .74rem;
+}
+
+/*main*/
+.mainc{
+	width: 100%;
+}
+.mainc img{
+	width: 90%;
+	padding: 2% 5%;
+	border-bottom: #d8d8d8 .04rem solid;
+}
+.mainc h2{
+	padding: 0 3%;
+	line-height: .7rem;
+	font-size: .3rem;
+	color: #4a4a4a;
+}
+.mainc h3{
+	padding: 0 3%;
+	font-size: .3rem;
+	color: #fc4a00;
+}
+.mainc p{
+	padding: 0 3%;
+	line-height: .62rem;
+	font-size: .22rem;
+	color: #989898;
+	text-decoration: line-through;
+}
+.mainc p span{
+	float: right;
+	text-decoration: none;
+}
+
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: .74rem;
+	background: #fff;
+	border-top: #e4e4e4 .02rem solid;
+}
+footer input{
+	width: 50%;
+	height: .74rem;
+	background: #fc4a00;
+	border: none;
+	outline: none;
+	font-size: .32rem;
+	color: #fff;
+}
+.btn{
+	background: #ffa500;
+}
+
+
+
+
+
+

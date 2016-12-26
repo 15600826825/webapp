@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/daily.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<i class="icon iconfont icon-logo">&#xe604;</i>
+			<p>
+				波奇日报
+			</p>
+		</div>
+		<div class="headerNull"></div>
+		<div class="main">
+			
+			<div class="main-m">
+			<div class="main-title">
+				<div class="main-title-time">
+					2016年10月22日
+				</div>
+			</div>
+			<div class="main-box">
+				<div class="main-box-img">
+					<img src="../img/daily/12.jpg" alt="" />
+					<div class="main-box-mess">
+						波奇日报|"掉毛终结者"紧身衣诞生，狗狗穿上有种迷之性感！
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="main-m">
+				<div class="main-title">
+					<div class="main-title-time">
+						2016年10月23日
+					</div>
+				</div>
+				<div class="main-box">
+					<div class="main-box-img">
+						<img src="../img/daily/20.jpg" alt="" />
+						<div class="main-box-mess">
+							波奇日报|比熊犬（Bichon Frisé）是一种小型常见的宠物狗
+						</div>
+					</div>
+					<div class="main-box-list">
+						<div class="main-box-list-left">
+							爱宠物糖|给猫咪做清洁，最容易忽略这5个地方
+						
+						</div>
+						<div class="main-box-list-right">
+							学堂
+						</div>
+					</div>
+					<div class="main-box-list">
+						<div class="main-box-list-left">
+							有愉快的态度，而且很容易因为小事情而满足
+						
+						</div>
+						<div class="main-box-list-right">
+							爱心
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/dropload.min.js" ></script>
+		<script>
+			
+			var scale=1/window.devicePixelRatio;
+			
+			var mstr='initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+			
+			document.getElementById('vp').content=mstr;
+			
+		</script>
+	
+		<script>
+	
+	         var html = document.querySelector("html");
+	         console.log(html.offsetWidth)
+	         html.style.fontSize = html.offsetWidth/640*100 + "px";
+	         addEventListener("resize",function(){
+	         	
+	          
+	             html.style.fontSize = html.offsetWidth/640*100 + "px";
+	         },false);
+	    
+		</script>
+		<script>
+			$(function(){
+    var counter = 0;
+   
+    var num = 2;
+    var pageStart = 0,pageEnd =0;
+
+    // dropload
+    $('.main').dropload({
+        scrollArea : window,
+        domUp : {
+            domClass   : 'dropload-up',
+            domRefresh : '<div class="dropload-refresh"><a class="update-logo"></a> </div>',
+            domUpdate  : '<div class="dropload-update"><a class="update-logo"></a></div>',
+            domLoad    : '<div class="dropload-load"><span  class="loading"><a class="update-logo"></a></span></div>',
+            domNoData  : '<div class="dropload-noData">暂无数据-自定义内容</div>'
+        },
+      
+        loadUpFn : function(me){
+           $.ajax({
+                type: 'GET',
+                url: '../json/daily.json',
+                dataType: 'json',
+                success: function(data){
+//                  var result = '';
+                    var str='';
+                    counter++;
+                    pageEnd = num * counter;
+                    pageStart = pageEnd - num;
+				  
+                    for(var i = pageStart; i <pageEnd; i++){
+                        	                   	
+						if((i + 1) >= data.list1.length){
+                            // 锁定
+                        
+                            me.lock();
+                            // 无数据
+                            me.noData();
+                            break;
+                        } 
+                        
+                     (function(i){
+                 		setTimeout(function(){
+                        	
+                        	
+                        	 var result ='<div class="main-m">'+
+										'<div class="main-title">'+
+										'<div class="main-title-time">'+data.list1[i].dates+'</div>'+
+										'</div><div class="main-box"><div class="main-box-img">'+
+										'<img src="../img/daily/'+data.list1[i].img+'" alt="" />'+
+										'<div class="main-box-mess">'+data.list1[i].message+'</div>'+
+										'</div></div>'+
+								'</div>'
+								
+							$('.main').prepend(result);
+							// 每次数据加载完，必须重置
+                       		 me.resetload();
+                   		 },2000);	
+                     })(i) 
+                     
+                     
+                     
+                    }
+                   
+                   
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        },
+        threshold : 50
+        
+    });
+    
+    			$(".icon-logo").on("click",function(){
+    				location.href="news.html";
+    			})
+});
+		</script>
+	</body>
+</html>
